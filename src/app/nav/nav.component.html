@@ -1,0 +1,10 @@
+
+  <nav class="Menu">
+
+    <a id="MenuElement"  routerLink="/home">Home</a>
+  <a id="MenuElementRegister"  *ngIf="!auth.isLoggedIn()" routerLink="/register">Register</a>
+  <a id="MenuElementLogin"  *ngIf="!auth.isLoggedIn()" routerLink="/login">Login</a>
+  <a id="MenuElementLogin"  *ngIf="auth.isLoggedIn()" (click)="auth.logout()">Logout</a>
+
+</nav>
+

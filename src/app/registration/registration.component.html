@@ -1,0 +1,17 @@
+<div id= "RegisterPanel">
+  <div id="LoginPanel">
+      <form [formGroup]="form" (ngSubmit)="register()">
+
+      <span>
+      <input  type="text" placeholder="login" formControlName="email" />
+    </span>
+      <span>
+      <input type="password" placeholder="Password" formControlName="password" />
+    </span>
+      <button type="submit" color="primary">Register</button>
+
+
+    </form>
+    </div>
+
+</div>
